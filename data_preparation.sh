@@ -2,6 +2,8 @@
 
 # bash data_preparation.sh data/dialog/Category_corpus.txt
 
+python parsing.py
+
 cat $1 | shuf > $1.shuf
 
 NUMLINES=$(cat $1.shuf | wc -l)
